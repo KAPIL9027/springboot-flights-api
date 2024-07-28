@@ -1,0 +1,19 @@
+# Database Configuration
+spring.datasource.url=jdbc:postgresql://<your_database_host>/your_database_name?sslmode=require
+spring.datasource.username=your_database_username
+spring.datasource.password=your_database_password
+spring.datasource.driver-class-name=org.postgresql.Driver
+
+# Server Configuration
+server.port=3001
+
+# JPA Configuration
+spring.jpa.hibernate.ddl-auto=update
+
+# Email Configuration
+spring.mail.host=smtp.gmail.com
+spring.mail.port=587
+spring.mail.username=your_email_username
+spring.mail.password=your_email_password
+spring.mail.properties.mail.smtp.auth=true
+spring.mail.properties.mail.smtp.starttls.enable=true

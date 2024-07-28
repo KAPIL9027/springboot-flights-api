@@ -37,7 +37,7 @@ public class FlightController {
     @PutMapping("/{id}")
     public ResponseEntity<Object> updateFlightById(@PathVariable Integer id, @RequestBody Flight updatedFlight){
         Flight flight = (Flight)flightService.getFlightById(id).getBody();
-        if(!flight.getFlight_status().equals(updatedFlight.getFlight_status()) || !flight.getGate().equals(updatedFlight.getGate())){
+        if(flight != null && (!flight.getFlight_status().equals(updatedFlight.getFlight_status()) || !flight.getGate().equals(updatedFlight.getGate()))){
             List<User> subscribedUsers = userService.getUsersByFlightNumber(flight.getFlightNumber());
             for (User user : subscribedUsers) {
                 StringBuilder statusMessage = new StringBuilder();
