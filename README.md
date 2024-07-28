@@ -10,6 +10,11 @@ Subscription: Users can enter their email addresses to subscribe to updates for 
 Backend (Spring Boot Flights API)
 The backend is a Spring Boot application that provides RESTful APIs for managing flight data and handling user subscriptions. It interacts with a PostgreSQL database to store flight and user information.
 
+
+
+
+
+
 # Important Endpoints
 Get All Flights
 
