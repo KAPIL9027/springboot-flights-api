@@ -1,7 +1,7 @@
 # Flight Status Application
 This project consists of a frontend React application and a backend Spring Boot API. The application provides real-time flight status updates and allows users to subscribe to email notifications for specific flight status changes.
 
-# Frontend (React Application)
+# Frontend (React Application)  
 The React application displays all flight statuses on the homepage. Users can subscribe to receive updates on flight status changes via email.
 
 # Features
